@@ -8,6 +8,8 @@ import { PortafolioComponent } from './components/portafolio/portafolio.componen
 import { AboutComponent } from './components/about/about.component';
 import { ItemComponent } from './components/item/item.component';
 
+import { app_roting  } from './app.routes';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +20,8 @@ import { ItemComponent } from './components/item/item.component';
     ItemComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    app_roting
   ],
   providers: [],
   bootstrap: [AppComponent]
