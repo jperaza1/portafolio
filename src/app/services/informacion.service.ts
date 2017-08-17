@@ -31,7 +31,7 @@ export class InformacionService {
       this.equipo = data.json();
       console.log(this.equipo)
     })
-    
+
   }
 
 }
