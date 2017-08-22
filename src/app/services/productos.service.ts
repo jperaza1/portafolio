@@ -15,9 +15,16 @@ export class ProductosService {
      this.cargando = true;
     this.http.get("https://portafolio-3e190.firebaseio.com/productos_idx.json")
     .subscribe( res => {
+
       console.log(res.json());
-      this.productos = res.json();
-      this.cargando = false;
+
+      setTimeout( ()=>{
+        this.productos = res.json();
+        this.cargando = false;
+      },1500)
+
+      
+
     })
    }
 
